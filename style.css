@@ -1,0 +1,70 @@
+* {
+    cursor: pointer;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px; /* Increase max-width for better layout */
+    margin: 50px auto;
+    text-align: center;
+}
+
+#title {
+    margin-top: 30px;
+    font-size: 24px;
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis; /* Add ellipsis for truncated text */
+}
+
+#description {
+    margin-bottom: 30px;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 14px;
+    max-width: 200px; /* Limit tooltip width */
+    white-space: nowrap; /* Prevent tooltip text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for truncated text */
+}
+
+
+.legend {
+    margin-top: 20px;
+    font-size: 14px; /* Increase font size */
+}
+
+.legend .legend-item {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.legend .legend-item span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: 1px solid #ccc; /* Add border for better separation */
+    border-radius: 3px; /* Add border radius */
+}
+
+#treemap {
+    width: 100%;
+    height: 600px; /* Set a fixed height */
+    padding: 20px; /* Add padding */
+}
